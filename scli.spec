@@ -1,14 +1,19 @@
 Summary:	SCLI - SNMP Command Line Interface
 Name:		scli
-Version:	0.2.12
-Release:	%mkrel 8
+Version:	0.3.1
+Release:	%mkrel 1
 License:	GPL
 Group:		Networking/Other
 
 Source0:	ftp://ftp.ibr.cs.tu-bs.de/pub/local/scli/%{name}-%{version}.tar.bz2
 Url:		http://www.ibr.cs.tu-bs.de/projects/scli/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	libxml2-devel readline-devel ncurses-devel libglib-devel
+BuildRequires:	libxml2-devel
+BuildRequires:	readline-devel
+BuildRequires:	ncurses-devel
+BuildRequires:	libglib2-devel
+BuildRequires:	libgnet2-devel
+BuildRequires:	gsnmp-devel
 
 %description
 Authors description on the project's home page:
@@ -59,8 +64,7 @@ rm -fr %buildroot
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS ChangeLog NEWS PORTING README TODO doc/scli.ps
+%doc AUTHORS ChangeLog NEWS PORTING README TODO 
 %{_bindir}/*
 %{_mandir}/man1/*
 %{_infodir}/*
-
