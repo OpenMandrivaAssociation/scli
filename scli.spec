@@ -6,6 +6,7 @@ License:	GPL
 Group:		Networking/Other
 
 Source0:	ftp://ftp.ibr.cs.tu-bs.de/pub/local/scli/%{name}-%{version}.tar.bz2
+Patch0:		scli-0.3.1-fix-str-fmt.patch
 Url:		http://www.ibr.cs.tu-bs.de/projects/scli/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	libxml2-devel
@@ -44,14 +45,15 @@ SNMP monitoring and configuration tools. ;-)"
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
-%configure --disable-xmltest
+%configure2_5x --disable-xmltest
 %make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%makeinstall
+%makeinstall_std
 
 %post
 %_install_info %{name}.info
