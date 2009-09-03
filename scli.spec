@@ -1,7 +1,7 @@
 Summary:	SCLI - SNMP Command Line Interface
 Name:		scli
 Version:	0.3.1
-Release:	%mkrel 5
+Release:	%mkrel 6
 License:	GPL
 Group:		Networking/Other
 
