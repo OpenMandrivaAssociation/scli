@@ -1,12 +1,11 @@
 Summary:	SCLI - SNMP Command Line Interface
 Name:		scli
-Version:	0.3.1
-Release:	%mkrel 6
-License:	GPL
+Version:	0.4.0
+Release:	%mkrel 1
+License:	GPLv2
+Patch0:		scli-0.4.0-fix-str-fmt.patch
 Group:		Networking/Other
-
-Source0:	ftp://ftp.ibr.cs.tu-bs.de/pub/local/scli/%{name}-%{version}.tar.bz2
-Patch0:		scli-0.3.1-fix-str-fmt.patch
+Source0:	ftp://ftp.ibr.cs.tu-bs.de/pub/local/scli/%{name}-%{version}.tar.gz
 Url:		http://www.ibr.cs.tu-bs.de/projects/scli/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	libxml2-devel
