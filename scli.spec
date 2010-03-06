@@ -3,7 +3,8 @@ Name:		scli
 Version:	0.4.0
 Release:	%mkrel 1
 License:	GPLv2
-Patch0:		scli-0.4.0-fix-str-fmt.patch
+#patch was sent upstream (Kharec)
+Patch0:		scli-0.4.0-fix-str-fmt.patch 
 Group:		Networking/Other
 Source0:	ftp://ftp.ibr.cs.tu-bs.de/pub/local/scli/%{name}-%{version}.tar.gz
 Url:		http://www.ibr.cs.tu-bs.de/projects/scli/
