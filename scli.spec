@@ -8,7 +8,7 @@ Patch0:		scli-0.4.0-fix-str-fmt.patch
 Group:		Networking/Other
 Source0:	ftp://ftp.ibr.cs.tu-bs.de/pub/local/scli/%{name}-%{version}.tar.gz
 Url:		http://www.ibr.cs.tu-bs.de/projects/scli/
-BuildRequires:	libxml2-devel
+BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	readline-devel
 BuildRequires:	ncurses-devel
 BuildRequires:	libglib2-devel
