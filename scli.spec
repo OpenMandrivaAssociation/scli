@@ -11,8 +11,8 @@ Url:		http://www.ibr.cs.tu-bs.de/projects/scli/
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	readline-devel
 BuildRequires:	ncurses-devel
-BuildRequires:	libglib2-devel
-BuildRequires:	libgnet2-devel
+BuildRequires:	pkgconfig(glib-2.0)
+BuildRequires:	pkgconfig(gnet-2.0)
 BuildRequires:	gsnmp-devel
 
 %description
