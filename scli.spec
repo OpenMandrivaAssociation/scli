@@ -1,4 +1,4 @@
-Summary:	SCLI - SNMP Command Line Interface
+Summary:	- SNMP Command Line Interface
 Name:		scli
 Version:	0.4.0
 Release:	5
