@@ -1,7 +1,7 @@
-Summary:	- SNMP Command Line Interface
+Summary:	SNMP Command Line Interface
 Name:		scli
 Version:	0.4.0
-Release:	5
+Release:	6
 License:	GPLv2
 #patch was sent upstream (Kharec)
 Patch0:		scli-0.4.0-fix-str-fmt.patch 
@@ -54,7 +54,6 @@ SNMP monitoring and configuration tools. ;-)"
 %makeinstall_std
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS NEWS PORTING README TODO 
 %{_bindir}/*
 %{_mandir}/man1/*
