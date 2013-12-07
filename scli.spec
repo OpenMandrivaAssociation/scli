@@ -1,7 +1,7 @@
 Summary:	SNMP Command Line Interface
 Name:		scli
 Version:	0.4.0
-Release:	8
+Release:	9
 License:	GPLv2
 #patch was sent upstream (Kharec)
 Patch0:		scli-0.4.0-fix-str-fmt.patch 
