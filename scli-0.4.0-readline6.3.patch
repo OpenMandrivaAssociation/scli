@@ -1,0 +1,12 @@
+diff -urN scli-0.4.0/scli/scli.c scli-0.4.0-patched/scli/scli.c
+--- scli-0.4.0/scli/scli.c	2010-02-19 18:27:04.000000000 +1000
++++ scli-0.4.0-patched/scli/scli.c	2014-07-23 00:33:49.133200185 +1100
+@@ -265,7 +265,7 @@
+     rl_readline_name = "scli";
+ 
+     /* Tell the completer that we want a crack first. */
+-    rl_attempted_completion_function = (CPPFunction *) completion;
++    rl_attempted_completion_function = (rl_completion_func_t *) completion;
+ }
+ 
+ /*
