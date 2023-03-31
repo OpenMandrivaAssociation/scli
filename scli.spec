@@ -1,7 +1,7 @@
 Summary:	SCLI - SNMP Command Line Interface
 Name:		scli
 Version:	0.4.0
-Release:	18
+Release:	19
 License:	GPLv2+
 Group:		Networking/Other
 Url:		http://www.ibr.cs.tu-bs.de/projects/scli/
