@@ -4,7 +4,7 @@ Version:	0.4.0
 Release:	19
 License:	GPLv2+
 Group:		Networking/Other
-Url:		http://www.ibr.cs.tu-bs.de/projects/scli/
+Url:		https://www.ibr.cs.tu-bs.de/projects/scli/
 Source0:	ftp://ftp.ibr.cs.tu-bs.de/pub/local/scli/%{name}-%{version}.tar.gz
 #patch was sent upstream (Kharec)
 Patch0:		scli-0.4.0-fix-str-fmt.patch
