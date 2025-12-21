@@ -10,6 +10,11 @@ Source0:	ftp://ftp.ibr.cs.tu-bs.de/pub/local/scli/%{name}-%{version}.tar.gz
 Patch0:		scli-0.4.0-fix-str-fmt.patch
 #from upstream
 Patch1:		scli-0.4.0-readline6.3.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	readline-devel
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gnet-2.0)
