@@ -62,6 +62,8 @@ SNMP monitoring and configuration tools. ;-)"
 %prep
 %setup -q
 %patch 0 -p0
+# Readline only provides CPPFunction when WANT_OBSOLETE_TYPEDEFS is set.
+%patch 1 -p1
 
 %build
 %configure2_5x --disable-xmltest
