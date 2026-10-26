@@ -1,3 +1,5 @@
+%global optflags %{optflags} -Wno-implicit-function-declaration -Wno-int-conversion
+
 Summary:	SCLI - SNMP Command Line Interface
 Name:		scli
 Version:	0.4.0
